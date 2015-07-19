@@ -3,6 +3,7 @@
 # What is the largest prime factor of the number 600851475143 ?
 
 def largest_prime_factor(num)
+  raise ArgumentError.new("Number must be greater than 1") if num < 2
   prime_factors = []
   divisor = 0
   i = 2
